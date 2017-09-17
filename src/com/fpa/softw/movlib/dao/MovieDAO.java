@@ -5,6 +5,7 @@ import com.fpa.softw.movlib.models.Movie;
 import com.fpa.softw.movlib.models.User;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -19,7 +20,30 @@ public class MovieDAO {
     }
 
     public boolean addMovie(Movie movie){
-        return false;
+
+        String sql = "INSERT INTO movie (title, user_rating, watched_year, watched, recommends, user_id) VALUES (?, ?, ?, ?, ?, ?)";
+
+        try {
+            PreparedStatement preparedStatement = this.connection.prepareStatement(sql);
+
+            preparedStatement.setString(1, movie.getTitle());
+            preparedStatement.setDouble(2, movie.getUserRating());
+            preparedStatement.setInt(3, movie.getWatchedYear());
+            preparedStatement.setBoolean(4, movie.isWatched());
+            preparedStatement.setBoolean(5, movie.isRecommends());
+            preparedStatement.setInt(6, movie.getUserId());
+
+            preparedStatement.execute();
+
+            preparedStatement.close();
+
+            return true;
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+            return false;
+        }
+
     }
 
     public List<Movie> listMovieByUserId(int userId){
