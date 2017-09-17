@@ -83,4 +83,9 @@ public class Movie {
     public void setRecommends(boolean recommends) {
         this.recommends = recommends;
     }
+
+    @Override
+    public String toString() {
+        return "Title: " + this.getTitle() + " | Your rating: " + this.getUserRating();
+    }
 }
