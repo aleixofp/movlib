@@ -78,7 +78,18 @@ public class MovieDAO {
     }
 
     public void removeMovie(Movie movie){
+        String sql = "DELETE FROM movie WHERE id = " + movie.getId();
 
+        try {
+            PreparedStatement preparedStatement = this.connection.prepareStatement(sql);
+
+            preparedStatement.executeUpdate();
+
+            preparedStatement.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public void updateMovie(int movieId){
