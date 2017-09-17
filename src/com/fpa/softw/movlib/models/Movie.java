@@ -18,6 +18,16 @@ public class Movie {
         this.watchedYear = watchedYear;
     }
 
+    public Movie(String title, double userRating, int watchedYear, boolean watched, boolean recommends, int userId) {
+
+        this.userId = userId;
+        this.title = title;
+        this.userRating = userRating;
+        this.watched = watched;
+        this.recommends = recommends;
+        this.watchedYear = watchedYear;
+    }
+
     public int getId() {
         return id;
     }
