@@ -42,7 +42,7 @@ public class UserDAO {
 
     }
     public boolean removeUser(String username){
-        String sql = "DELETE FROM movlib WHERE username=" + username;
+        String sql = "DELETE FROM user WHERE username=" + username;
 
         try {
             PreparedStatement preparedStatement = this.connection.prepareStatement(sql);
@@ -76,9 +76,9 @@ public class UserDAO {
         try {
             ResultSet rs = this.connection.prepareStatement(sql).executeQuery();
 
-            User user = new User();
-            while (rs.next()){
 
+            while (rs.next()){
+                User user = new User();
                 user.setId(rs.getInt(1));
                 user.setName(rs.getString(2));
                 user.setUsername(rs.getString(3));
