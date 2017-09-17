@@ -23,4 +23,8 @@
 
     <Button onAction="#addMovie" fx:id="btnAddMovie" layoutX="470" layoutY="48" text="Add Movie"/>
 
+    <Button onAction="#editMovie" fx:id="btnEditMovie" layoutX="470" layoutY="90" text="Edit Movie" disable="true"/>
+
+    <Button onAction="#removeMovie" fx:id="btnRemoveMovie" layoutX="470" layoutY="132" text="Remove Movie" disable="true"/>
+
 </AnchorPane>
