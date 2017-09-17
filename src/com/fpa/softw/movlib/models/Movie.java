@@ -5,8 +5,18 @@ public class Movie {
     private int id, userId;
     private String title;
     private double userRating;
-    private int watchedYear;
     private boolean watched, recommends;
+    private int watchedYear;
+
+    public Movie(int id, String title, double userRating, int watchedYear, boolean watched, boolean recommends, int userId) {
+        this.id = id;
+        this.userId = userId;
+        this.title = title;
+        this.userRating = userRating;
+        this.watched = watched;
+        this.recommends = recommends;
+        this.watchedYear = watchedYear;
+    }
 
     public int getId() {
         return id;
