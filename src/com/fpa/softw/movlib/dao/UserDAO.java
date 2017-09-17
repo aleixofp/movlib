@@ -68,6 +68,16 @@ public class UserDAO {
         return null;
     }
 
+    public User findUser(int id){
+        for(User user: this.listUsers()){
+            if (id == user.getId()){
+                return user;
+            }
+        }
+
+        return null;
+    }
+
     public List<User> listUsers(){
         String sql = "SELECT * FROM user";
 

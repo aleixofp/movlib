@@ -7,6 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.text.Font?>
 
 <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fpa.softw.movlib.controllers.MenuController">
@@ -38,6 +39,11 @@
          <FlowPane.margin>
             <Insets top="5.0" />
          </FlowPane.margin></Button>
+      <Region fx:id="regUsers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="160.0">
+         <FlowPane.margin>
+            <Insets top="5.0" />
+         </FlowPane.margin>
+      </Region>
    </children>
    <opaqueInsets>
       <Insets bottom="5.0" left="5.0" right="5.0" />
