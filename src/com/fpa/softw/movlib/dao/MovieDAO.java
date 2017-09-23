@@ -80,8 +80,12 @@ public class MovieDAO {
     public void removeMovie(Movie movie){
         String sql = "DELETE FROM movie WHERE id = " + movie.getId();
 
+        executeUpdate(sql);
+    }
+
+    private void executeUpdate(String sqlStatement){
         try {
-            PreparedStatement preparedStatement = this.connection.prepareStatement(sql);
+            PreparedStatement preparedStatement = this.connection.prepareStatement(sqlStatement);
 
             preparedStatement.executeUpdate();
 
@@ -92,8 +96,18 @@ public class MovieDAO {
         }
     }
 
-    public void updateMovie(int movieId){
+    public void updateMovie(Movie movie, int userId){
 
+        String newTitle = movie.getTitle();
+        double newRating = movie.getUserRating();
+        int newWatchedYear = movie.getWatchedYear();
+        boolean newWatched = movie.isWatched();
+        boolean newRecommends = movie.isRecommends();
+
+        String sql = String.format("UPDATE movie SET title = %s, user_rating = %s, watched_year = %s, watched = %b, recommends = %b WHERE user_id = %d", newTitle, newRating,
+                                    newWatchedYear, newWatched, newRecommends, userId);
+
+        executeUpdate(sql);
     }
 
 }

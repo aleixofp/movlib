@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fpa.softw.movlib.controllers.AddMovieController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fpa.softw.movlib.controllers.EditMovieController">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="ADD YOUR MOVIE">
          <font>
@@ -19,7 +19,7 @@
       <CheckBox fx:id="cbWatched" layoutX="107.0" layoutY="139.0" mnemonicParsing="false" onAction="#onWatchedClick" text="Watched?" />
       <CheckBox fx:id="cbRecommends" layoutX="192.0" layoutY="139.0" mnemonicParsing="false" text="Recommends?" visible="false" />
       <TextField fx:id="txtWatchedYear" layoutX="106.0" layoutY="168.0" promptText="Watched year" visible="false" />
-      <Button fx:id="btnAdd" layoutX="370.0" layoutY="62.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button fx:id="btnSave" layoutX="370.0" layoutY="62.0" mnemonicParsing="false" onAction="#save" text="Add" />
       <Button fx:id="btnBack" layoutX="420.0" layoutY="62.0" mnemonicParsing="false" onAction="#back" text="Back" />
    </children>
 </AnchorPane>

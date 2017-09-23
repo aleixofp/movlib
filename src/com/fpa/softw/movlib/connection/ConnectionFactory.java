@@ -11,7 +11,7 @@ public class ConnectionFactory {
         try {
             Class.forName("com.mysql.jdbc.Driver");
 
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/movlib", "root", "memroot");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/movlib?useSSL=false", "root", "memroot");
 
         } catch (SQLException | ClassNotFoundException e) {
             System.out.println("ERRO: " + e.getMessage() + " | " + e.getClass());

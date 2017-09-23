@@ -31,6 +31,11 @@ public class AddMovieController {
     }
 
     @FXML
+    private void back(){
+        Main.changeScene("lobby.fxml");
+    }
+
+    @FXML
     private void add(){
 
         String title = this.txtMovieTitle.getText();

@@ -62,6 +62,12 @@ public class LobbyController {
     }
 
     @FXML
+    private void logoff(){
+        LoggedInUser.setProfile(null);
+        Main.changeScene("menu.fxml");
+    }
+
+    @FXML
     private void addMovie(){
         Main.changeScene("add_movie.fxml");
     }
