@@ -77,6 +77,16 @@ public class MovieDAO {
         return movieList;
     }
 
+    public Movie findMovie(int userId, String movieTitle){
+        for(Movie movie: this.listMovieByUserId(userId)){
+            if (movieTitle.equals(movie.getTitle())){
+                return movie;
+            }
+        }
+
+        return null;
+    }
+
     public void removeMovie(Movie movie){
         String sql = "DELETE FROM movie WHERE id = " + movie.getId();
 
@@ -96,18 +106,36 @@ public class MovieDAO {
         }
     }
 
-    public void updateMovie(Movie movie, int userId){
+    public void updateMovie(Movie movie, int userId, int movieId){
 
         String newTitle = movie.getTitle();
         double newRating = movie.getUserRating();
         int newWatchedYear = movie.getWatchedYear();
-        boolean newWatched = movie.isWatched();
-        boolean newRecommends = movie.isRecommends();
+        byte newWatched = (byte) (movie.isWatched() ? 1 : 0);
+        byte newRecommends = (byte) (movie.isRecommends() ? 1 : 0);
 
-        String sql = String.format("UPDATE movie SET title = %s, user_rating = %s, watched_year = %s, watched = %b, recommends = %b WHERE user_id = %d", newTitle, newRating,
-                                    newWatchedYear, newWatched, newRecommends, userId);
+        String sql = "UPDATE movie SET title = ?, user_rating = ?, watched_year = ?, watched = ?, recommends = ? WHERE user_id = ? AND id = ?";
 
-        executeUpdate(sql);
+
+        try {
+
+            PreparedStatement preparedStatement = this.connection.prepareStatement(sql);
+            preparedStatement.setString(1, newTitle);
+            preparedStatement.setDouble(2, newRating);
+            preparedStatement.setInt(3, newWatchedYear);
+            preparedStatement.setByte(4, newWatched);
+            preparedStatement.setByte(5, newRecommends);
+            preparedStatement.setInt(6, userId);
+            preparedStatement.setInt(7, movieId);
+            preparedStatement.executeUpdate();
+
+            preparedStatement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
     }
+
 
 }
