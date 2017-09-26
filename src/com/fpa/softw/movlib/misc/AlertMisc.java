@@ -11,7 +11,7 @@ public class AlertMisc {
 
     public void setupAndShowAlert(Alert.AlertType alertType, String message){
 
-        if (this.alert == null) {
+        if (this.alert == null || this.alert.getButtonTypes().size() > 0) {
             this.alert = new Alert(alertType, message, ButtonType.OK);
         } else {
             this.alert.setAlertType(alertType);
