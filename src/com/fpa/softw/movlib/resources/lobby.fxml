@@ -21,9 +21,9 @@
 
     <ListView fx:id="lvMovies" layoutX="14.0" layoutY="48.0" prefHeight="340" prefWidth="450" />
 
-    <Button fx:id="btnAddMovie" layoutX="470" layoutY="48" onAction="#addMovie" text="Add Movie" />
+    <Button fx:id="btnAddMovie" layoutX="470" layoutY="48" onAction="#addOrEditMovie" text="Add Movie" />
 
-    <Button fx:id="btnEditMovie" disable="true" layoutX="470" layoutY="90" onAction="#editMovie" text="Edit Movie" />
+    <Button fx:id="btnEditMovie" disable="true" layoutX="470" layoutY="90" onAction="#addOrEditMovie" text="Edit Movie" />
 
     <Button fx:id="btnRemoveMovie" disable="true" layoutX="470" layoutY="132" onAction="#removeMovie" text="Remove Movie" />
 
