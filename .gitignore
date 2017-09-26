@@ -24,3 +24,4 @@ out/*/*.class
 hs_err_pid*
 .idea/artifacts/
 .idea/inspectionProfiles/
+/out/

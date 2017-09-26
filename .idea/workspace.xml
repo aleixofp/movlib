@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/controllers/AddMovieController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/controllers/EditMovieController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/resources/add_movie.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/resources/edit_movie.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/fpa/softw/movlib/controllers/EditMovieController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/fpa/softw/movlib/resources/edit_movie.fxml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/controllers/LobbyController.class" afterPath="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/controllers/LobbyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/dao/MovieDAO.class" afterPath="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/dao/MovieDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/misc/AlertMisc.class" afterPath="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/misc/AlertMisc.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/resources/lobby.fxml" afterPath="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/resources/lobby.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/fpa/softw/movlib/controllers/LobbyController.java" afterPath="$PROJECT_DIR$/src/com/fpa/softw/movlib/controllers/LobbyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/fpa/softw/movlib/dao/MovieDAO.java" afterPath="$PROJECT_DIR$/src/com/fpa/softw/movlib/dao/MovieDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/fpa/softw/movlib/misc/AlertMisc.java" afterPath="$PROJECT_DIR$/src/com/fpa/softw/movlib/misc/AlertMisc.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/fpa/softw/movlib/resources/lobby.fxml" afterPath="$PROJECT_DIR$/src/com/fpa/softw/movlib/resources/lobby.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/fpa/softw/movlib/controllers/AddMovieController.java" afterPath="$PROJECT_DIR$/src/com/fpa/softw/movlib/controllers/AddOrEditMovieController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/fpa/softw/movlib/resources/add_movie.fxml" afterPath="$PROJECT_DIR$/src/com/fpa/softw/movlib/resources/add_or_edit_movie.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/fpa/softw/movlib/resources/menu.fxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="397">
-              <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+              <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
               <folding>
                 <marker date="1506390241315" expanded="true" signature="2029:2031" ph="..." />
               </folding>
@@ -114,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddOrEditMovieController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddOrEditMovieController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/fpa/softw/movlib/controllers/AddOrEditMovieController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="402">
-              <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+              <caret line="58" column="29" lean-forward="false" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1419#1420#0" expanded="true" />
@@ -133,8 +117,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/fpa/softw/movlib/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="327">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="e#1241#1242#0" expanded="true" />
                 <element signature="e#1276#1277#0" expanded="true" />
@@ -143,6 +127,16 @@
                 <marker date="1506389700437" expanded="false" signature="1431:1442" ph=" { " />
                 <marker date="1506389700437" expanded="false" signature="1455:1461" ph=" }" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -177,7 +171,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/fpa/softw/movlib/dao/MovieDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="679">
-              <caret line="123" column="54" lean-forward="true" selection-start-line="123" selection-start-column="54" selection-end-line="123" selection-end-column="54" />
+              <caret line="123" column="54" lean-forward="false" selection-start-line="123" selection-start-column="54" selection-end-line="123" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1506395103315" expanded="true" signature="566:674" ph="INSERT INTO movie... " />
@@ -267,7 +261,6 @@
         <option value="$PROJECT_DIR$/src/com/fpa/softw/movlib/resources/edit_movie.fxml" />
         <option value="$PROJECT_DIR$/src/com/fpa/softw/movlib/controllers/EditMovieController.java" />
         <option value="$PROJECT_DIR$/src/com/fpa/softw/movlib/main/Main.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/fpa/softw/movlib/misc/AlertMisc.java" />
         <option value="$PROJECT_DIR$/src/com/fpa/softw/movlib/resources/menu.fxml" />
         <option value="$PROJECT_DIR$/src/com/fpa/softw/movlib/resources/add_movie.fxml" />
@@ -276,6 +269,7 @@
         <option value="$PROJECT_DIR$/src/com/fpa/softw/movlib/controllers/LobbyController.java" />
         <option value="$PROJECT_DIR$/src/com/fpa/softw/movlib/dao/MovieDAO.java" />
         <option value="$PROJECT_DIR$/src/com/fpa/softw/movlib/controllers/AddOrEditMovieController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -287,9 +281,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="2560" />
-    <option name="height" value="1413" />
+    <option name="x" value="683" />
+    <option name="y" value="424" />
+    <option name="width" value="1612" />
+    <option name="height" value="867" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -405,6 +400,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/controllers/AddOrEditMovieController.class" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -634,7 +630,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53780000" />
+    <option name="totallyTimeSpent" value="54663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -725,19 +721,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/fpa/softw/movlib/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="62" column="46" lean-forward="false" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1505675739107" expanded="true" signature="548:608" ph="INSERT INTO movlib... " />
-            <marker date="1505675739107" expanded="true" signature="1193:1225" ph="DELETE FROM " />
-            <marker date="1505675739107" expanded="true" signature="2069:2087" ph="SELECT * FRO... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fpa/softw/movlib/models/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1111,18 +1094,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fpa/softw/movlib/resources/menu.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
-          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
           <folding>
             <marker date="1506390241315" expanded="true" signature="2029:2031" ph="..." />
           </folding>
@@ -1193,21 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fpa/softw/movlib/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1276#1277#0" expanded="true" />
-            <marker date="1506389700437" expanded="false" signature="1340:1350" ph=" { " />
-            <marker date="1506389700437" expanded="false" signature="1381:1387" ph=" }" />
-            <marker date="1506389700437" expanded="false" signature="1431:1442" ph=" { " />
-            <marker date="1506389700437" expanded="false" signature="1455:1461" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fpa/softw/movlib/resources/lobby.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -1230,7 +1190,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/fpa/softw/movlib/dao/MovieDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="679">
-          <caret line="123" column="54" lean-forward="true" selection-start-line="123" selection-start-column="54" selection-end-line="123" selection-end-column="54" />
+          <caret line="123" column="54" lean-forward="false" selection-start-line="123" selection-start-column="54" selection-end-line="123" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1506395103315" expanded="true" signature="566:674" ph="INSERT INTO movie... " />
@@ -1258,7 +1218,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/fpa/softw/movlib/controllers/AddOrEditMovieController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
-          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+          <caret line="58" column="29" lean-forward="false" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1419#1420#0" expanded="true" />
@@ -1266,6 +1226,39 @@
             <element signature="e#3900#3901#0" expanded="true" />
             <element signature="e#3938#3939#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/MovLib/com/fpa/softw/movlib/controllers/AddOrEditMovieController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#4297#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fpa/softw/movlib/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <marker date="1506389700437" expanded="false" signature="1340:1350" ph=" { " />
+            <marker date="1506389700437" expanded="false" signature="1381:1387" ph=" }" />
+            <marker date="1506389700437" expanded="false" signature="1431:1442" ph=" { " />
+            <marker date="1506389700437" expanded="false" signature="1455:1461" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
