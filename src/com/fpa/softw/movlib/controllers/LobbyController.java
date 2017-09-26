@@ -10,11 +10,16 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
@@ -68,13 +73,19 @@ public class LobbyController {
     }
 
     @FXML
-    private void addMovie(){
-        Main.changeScene("add_movie.fxml");
-    }
+    private void addOrEditMovie(Event event) throws IOException {
+        Button clickedButton = (Button) event.getSource();
+        System.out.println(clickedButton.getId().substring(3));
 
-    @FXML
-    private void editMovie(){
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../resources/add_or_edit_movie.fxml"));
 
+        Parent parent = loader.load();
+        AddOrEditMovieController addOrEditMovieController = loader.getController();
+
+        addOrEditMovieController.retrieveSceneType(clickedButton.getId().substring(3), this.selectedMovie);
+
+        Main.getPrimaryStage().setScene(new Scene(parent));
+        Main.getPrimaryStage().show();
     }
 
     @FXML
